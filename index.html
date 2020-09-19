@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link href="style/style.css" rel="stylesheet">
+    <script src="js/js.js"></script>
+</head>
+<body onload="bemVindo()" >
+    <div class="content">
+        <h1 onmouseover="mouse()">Lista de <label id="produtoTitulo" for="texto"></label></h1>
+        <form class="form" method="post">
+            <div class="inputs">
+                <label for="texto">Nome do Produto:</label>
+                <input type="text" name="texto" id="texto" required autocomplete="off">
+            </div>
+            
+            <div class="inputs">
+                <label for="qtde">Qtde do Produto:</label>
+                <input type="number" name="qtde" id="qtde" required autocomplete="off">
+            </div>
+
+            <div id="botoes"></div>
+        </form>
+    
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td><label id="produtoLista" for="texto"></label></td>
+                    <td>Qtde</td>
+                    <td>Ações</td>
+                </tr>
+            </thead>
+            
+            <tbody id="conteudo"></tbody>
+            
+        </table>
+    </div>
+</body>
+</html>
